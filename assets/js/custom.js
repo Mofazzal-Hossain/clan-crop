@@ -1,13 +1,52 @@
 (function ($) {
   ("use strict");
 
+  var $win = $(window);
+  var $nav = $('.navbar');
+  var $top = $(".back-top i")
+  $win.on('scroll', function () {
+
+    var $scrolling = $(this).scrollTop();
+
+    if ($scrolling >= 50) {
+        $nav.addClass("sticky-menu");
+    } else {
+        $nav.removeClass("sticky-menu");
+    }
+
+    // back to top
+    if ($scrolling >= 400) {
+      $top.fadeIn();
+    } else {
+      $top.fadeOut();
+    }
+  });
+
+  $top.on('click', function () {
+      $("html,body").animate({
+          scrollTop: 0
+      }, 0);
+  });
+
+
+
+  //banner slider
+  $(".banner-slider").slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false,
+    fade:true,
+    pauseOnHover: false,
+  });
+
   //inventory slider
   $(".inventory-slider").slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     arrows: true,
     pauseOnHover: false,
     responsive: [
@@ -40,7 +79,7 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     arrows: false,
     pauseOnHover:false,
     responsive: [
@@ -73,7 +112,7 @@
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1500,
     arrows: false,
     pauseOnHover:false,
     responsive: [
@@ -99,5 +138,7 @@
       },
     ],
   });
+
+  new WOW().init();
 
 })(jQuery);

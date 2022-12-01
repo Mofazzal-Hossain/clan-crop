@@ -64,9 +64,6 @@ li {
 .section-gap{
   padding: 80px 0;
 }
-.clear-fix{
-  clear: both;
-}
 .container{
   max-width: 1270px;
 }
@@ -102,18 +99,41 @@ h4.sub-title{
 }
 
 /* navigation */
+.navbar{
+  position: absolute;
+  top:24px;
+  width: 100%;
+  left: 0;
+  transition: all 0.2s ease-in;
+  padding: 0;
+}
 .navbar-nav .nav-item .nav-link{
   font-size: 16px;
   padding: 13px 17px;
   gap: 10px;
 }
+.navbar-nav .nav-item .nav-link:hover{
+  color: #1B41C9!important;
+}
 .product-cart{
   margin-right: 60px;
 }
 
+/* sticky menu */
+.navbar.sticky-menu{
+  position: fixed;
+  top: 0 !important;
+  width: 100%;
+  left: 0;
+  background: #fff;
+  padding:1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 999;
+}
+
 /* home banner */
 .home-banner{
-  padding: 160px 0 0;
+  padding: 250px 0 0;
 }
 .banner-content{
   width: 880px;
@@ -125,29 +145,21 @@ h4.sub-title{
   line-height: 96px;
 }
 
-.home-banner::before {
+.home-banner .banner-left_img{
   content: '';
   position: absolute;
   left: 152px;
-  top: 302.24px;
-  background: url(../images/rocket.png);
+  top: 302px;
   width: 371px;
-  height: 420.26px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  height: 420px;
 }
-.home-banner::after {
+.home-banner .banner-right_img{
   content: '';
   position: absolute;
   right: 152px;
   top: 302.24px;
-  background: url(../images/app-development-amico.png);
   width: 384px;
   height: 384px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /* block spacer */
@@ -210,14 +222,10 @@ h4.sub-title{
   color: #fff;
   background: url('../images/slider-prev.png') no-repeat;
   content: "";
-  display: block;
   border: 0;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  z-index: 9999;
-  text-align: center;
-  line-height: 50px;
+  z-index: 9;
   font-size: 0;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -229,6 +237,25 @@ h4.sub-title{
   right: 12px;
   background: url('../images/slider-arrow-hover.png') no-repeat;
 }
+
+/*---->>>Clan Key Services<<<------*/
+.clan-key-services .service-content h3{
+  font-size: 32px;
+}
+
+.clan-key-services .service-content p{
+  max-width: 245px;
+}
+
+/* space divider */
+.space-divider .max-divider{
+  width: 1px;
+  margin-right:7px;
+}
+.space-divider .min-divider{
+  width: 1px;
+}
+
 
 /*---->>>Themes Wrapper<<<------*/
 .themes-wrapper .themes-item_image,
@@ -266,7 +293,6 @@ h4.sub-title{
 .pd-view_card .image{
   padding-right: 26px;
 }
-
 
 /*---->>>Footer Wrapper<<<------*/
 .footer-wrapper{
@@ -315,6 +341,7 @@ h4.sub-title{
 .footer-menu_list li a:hover{
   color: #F3D227!important;
 }
+
 /*---->>>Copyright Wrapper<<<------*/
 .copyright-wrapper{
   padding: 33px 0;
@@ -323,4 +350,25 @@ h4.sub-title{
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
+}
+
+/*---->>>Back Top<<<------*/
+
+.back-top i {
+  font-size: 18px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius:10px 10px 0px 10px;
+  display: none;
+  z-index: 99;
+  transition: all 0.2s linear;
+}
+.back-top i:hover{
+  background: #1B41C9;
+  color: #fff;
 }

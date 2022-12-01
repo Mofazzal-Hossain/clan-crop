@@ -15,6 +15,8 @@
 		<link rel="stylesheet" href="assets/css/slick.min.css">
 		<!--bootstrap min css-->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!--animate min css-->
+		<link rel="stylesheet" href="assets/css/animate.min.css">
 		<!--style css-->
 		<link rel="stylesheet" href="assets/css/style.css">
 		<!--responsive css-->
@@ -23,9 +25,9 @@
 	<body>
 		
 		<!--===Header Wrapper===-->
-		<header class="header-wrapper w-100 clear-fix">
+		<header class="header-wrapper w-100 clearfix">
 			<!--navigation-->
-			<nav class="navbar navigation-menu navbar-expand-lg py-4 px-0 sticky">
+			<nav class="navbar navigation-menu navbar-expand-lg">
 				<div class="container">
 					<!-- logo -->
 					<a class="navbar-brand me-0 p-0" href="index.html">
@@ -69,17 +71,53 @@
 			<!--home banner-->
 			<div class="home-banner">
 				<div class="container">
-					<div class="home-banner_wrap">
-						<!-- banner content -->
-						<div class="banner-content text-center">
-							<h1 class="title text-capitalize clan-text-primary mb-4">Ideal solution to enhance <span class="clan-text-secondary">your business.</span></h1>
-							<h4 class="pb-4 mb-3 text-capitalize sub-title">In a small business, everyone wears multiple hats. ThriveDesk is so easy to use &understand that anyone in your company can become a support-pro very quickly and without any difficulty.</h4>
-							<a href="#" class="btn text-uppercase">Link text here</a>
+					<!--banner left image-->
+					<div class="banner-left_img">
+						<img src="assets/images/rocket.png" alt="banner image">
+					</div>
+					<!--banner right image-->
+					<div class="banner-right_img">
+						<img src="assets/images/app-development-amico.png" alt="banner-img">
+					</div>
+					<!--banner slider-->
+					<div class="banner-slider">
+						<!--banner item-->
+						<div class="banner-item">
+							<!-- banner content -->
+							<div class="banner-content text-center">
+								<h1 class="title text-capitalize clan-text-primary mb-4 wow animate__fadeInUp" data-wow-duration="1s">Ideal solution to enhance 
+									<span class="clan-text-secondary">your business.</span>
+								</h1>
+								<h4 class="pb-4 mb-3 text-capitalize sub-title">In a small business, everyone wears multiple hats. ThriveDesk is so easy to use &understand that anyone in your company can become a support-pro very quickly and without any difficulty.</h4>
+								<a href="#" class="btn text-uppercase">Link text here</a>
+							</div>
 						</div>
-						<!--heighlight image-->
-						<div class="heighlight-image section-gap pb-0">
-							<img src="assets/images/books-accounting-software.png" class="w-100" alt="books accounting software">
+						<!--banner item-->
+						<div class="banner-item">
+							<!-- banner content -->
+							<div class="banner-content text-center">
+								<h1 class="title text-capitalize clan-text-primary mb-4">Quality Is <span class="clan-text-secondary">Always</span>  Our First Priority.
+									
+								</h1>
+								<h4 class="pb-4 mb-3 text-capitalize sub-title">In a small business, everyone wears multiple hats. ThriveDesk is so easy to use &understand that anyone in your company can become a support-pro very quickly and without any difficulty.</h4>
+								<a href="#" class="btn text-uppercase">Link text here</a>
+							</div>
 						</div>
+						<!--banner item-->
+						<div class="banner-item">
+							<!-- banner content -->
+							<div class="banner-content text-center">
+								<h1 class="title text-capitalize clan-text-primary mb-4">We Don’t Make Clients, We Make 
+									<span class="clan-text-secondary">Relationships.</span>
+								</h1>
+								<h4 class="pb-4 mb-3 text-capitalize sub-title">In a small business, everyone wears multiple hats. ThriveDesk is so easy to use &understand that anyone in your company can become a support-pro very quickly and without any difficulty.</h4>
+								<a href="#" class="btn text-uppercase">Link text here</a>
+							</div>
+						</div>
+					</div>
+					<!--heighlight image-->
+					<div class="heighlight-image section-gap pb-0">
+						<img src="assets/images/books-accounting-software.png" class="w-100" alt="books accounting software">
 					</div>
 				</div>
 			</div>
@@ -88,11 +126,12 @@
 		<!--block spacer-->
 		<div class="block-spacer"></div>
 
-		<!--===Innovation Product===-->
-		<section class="innovation-products section-gap clear-fix">
+		<!--===Innovation Productd===-->
+		<section class="innovation-products section-gap clearfix">
 			<div class="container">
+				<!--products content-->
 				<div class="products-content bg-white">
-					<h2 class="fw-bold clan-text-primary text-capitalize mb-4 pb-3 title">Empowering <span class="clan-text-secondary">280,000+ Businesses</span> with Innovation</h2>
+					<h2 class="fw-bold clan-text-primary text-capitalize mb-4 pb-3 title wow animate__fadeInUp" data-wow-duration="0.8s">Empowering <span class="clan-text-secondary">280,000+ Businesses</span> with Innovation</h2>
 					<div class="innovation-list d-flex">
 						<!-- item -->
 						<div class="item">
@@ -120,13 +159,13 @@
 		</section>
 
 		<!--===Product Inventory===-->
-		<section class="product-inventory section-gap pt-0 clear-fix">
+		<section class="product-inventory section-gap pt-0 clearfix">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<!-- heading section -->
 						<div class="heading-section">
-							<h2 class="fw-bold clan-text-primary text-capitalize title mb-3">
+							<h2 class="fw-bold clan-text-primary text-capitalize title mb-3 wow animate__zoomIn" data-wow-duration="1s"> 
 								Perfect Solutions
 							</h2>
 							<h4 class="sub-title mb-4 pb-3">We are giving complete solution for your business or office to manage properly</h4>
@@ -191,8 +230,61 @@
 			</div>
 		</section>
 
+		<!--===Clan Key Services===-->
+		<section class="clan-key-services clearfix section-gap bg-white">
+			<div class="container">
+				<div class="flex-md-row flex-column d-flex justify-content-between">
+					<!--service item-->
+					<div class="service-item d-flex">
+						<div class="image me-3 pe-1">
+							<img src="assets/images/1.png" alt="service item">
+						</div>
+						<div class="service-content">
+							<h3 class="clan-text-primary fw-bold mb-4 pb-1">Free Dashboard</h3>
+							<p>Link your accounts and track your entire net worth.</p>
+						</div>
+					</div>
+
+					<!--space divider-->
+					<div class="space-divider d-flex align-items-center">
+						<div class="max-divider clan-bg-primary h-100"></div>
+						<div class="min-divider h-50 clan-bg-secondary"></div>
+					</div>
+				
+					<!--service item-->
+					<div class="service-item d-flex">
+						<div class="image me-3 pe-1">
+							<img src="assets/images/2.png" alt="service item">
+						</div>
+						<div class="service-content">
+							<h3 class="clan-text-primary fw-bold mb-4 pb-1">Free Dashboard</h3>
+							<p>Link your accounts and track your entire net worth.</p>
+						</div>
+					</div>
+
+					<!--space divider-->
+					<div class="space-divider d-flex align-items-center">
+						<div class="max-divider clan-bg-primary h-100"></div>
+						<div class="min-divider h-50 clan-bg-secondary"></div>
+					</div>
+					
+					<!--service item-->
+					<div class="service-item d-flex">
+						<div class="image me-3 pe-1">
+							<img src="assets/images/3.png" alt="service item">
+						</div>
+						<div class="service-content">
+							<h3 class="clan-text-primary fw-bold mb-4 pb-1">Free Dashboard</h3>
+							<p>Link your accounts and track your entire net worth.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
 		<!--===Themes Wrapper===-->
-		<section class="themes-wrapper clear-fix section-gap">
+		<section class="themes-wrapper clearfix section-gap">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -200,7 +292,7 @@
 						<div class="themes-content justify-content-between mb-4 pb-3 d-flex align-items-end">
 							<!--heading section-->
 							<div class="heading-section">
-								<h2 class="fw-bold clan-text-primary text-capitalize title mb-3">
+								<h2 class="fw-bold clan-text-primary text-capitalize title mb-3 wow animate__fadeInUp" data-wow-duration="1s">
 									Themes collection
 								</h2>
 								<h4 class="sub-title">We are giving complete solution for your business or office to manage properly</h4>
@@ -267,19 +359,19 @@
 		</section>
 		
 		<!--===Innovate Features===-->
-		<section class="innovate-features clear-fix section-gap bg-white">
+		<section class="innovate-features clearfix section-gap bg-white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<!-- feature image -->
+						<!-- features image -->
 						<div class="feature-image">
 							<img src="assets/images/innovate-feature.png" class="w-100" alt="save time with invoice scanning solution">
 						</div>
 					</div>
 					<div class="col-md-6">
-						<!-- feature content -->
+						<!-- features content -->
 						<div class="feature-content">
-							<h2 class="title clan-text-secondary fw-bold mb-4 text-capitalize">We Create <span class="clan-text-primary">Innovative Tools to Empower Businesses Around</span> the World</h2>
+							<h2 class="title clan-text-secondary fw-bold mb-4 text-capitalize wow animate__zoomIn" data-wow-duration="1s">We Create <span class="clan-text-primary">Innovative Tools to Empower Businesses Around</span> the World</h2>
 							<p class="mb-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa ametsuspendisse vitae enim morbi egestas ut. Venenatis netus pharetra non rpis aliquam. Elementum risus quam vel fermentum ullamcorper vitae. </p>
 							<button class="btn text-uppercase">browse all theme</button>
 						</div>
@@ -289,15 +381,15 @@
 		</section>
 
 		<!--===Plugins Wrapper===-->
-		<section class="plugins-wrapper clear-fix section-gap">
+		<section class="plugins-wrapper clearfix section-gap">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<!--themes content-->
+						<!--plugins content-->
 						<div class="plugins-content justify-content-between mb-4 pb-3 d-flex align-items-end text-white">
 							<!--heading section-->
 							<div class="heading-section">
-								<h2 class="fw-bold clan-text-primary text-capitalize title mb-3">
+								<h2 class="fw-bold clan-text-primary text-capitalize title mb-3 wow animate__fadeInUp" data-wow-duration="1s">
 									Easy Solutions plugins
 								</h2>
 								<h4 class="sub-title">We are giving complete solution for your business or office to manage properly</h4>
@@ -364,7 +456,7 @@
 		</section>
 
 		<!--===Support Wrapper===-->
-		<section class="support-wrapper clear-fix section-gap">
+		<section class="support-wrapper clearfix section-gap">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-7">
@@ -376,14 +468,14 @@
 					<div class="col-md-5">
 						<!-- support content -->
 						<div class="support-content">
-							<h2 class="title clan-text-primary fw-bold mb-4 text-capitalize">
+							<h2 class="title clan-text-primary fw-bold mb-4 text-capitalize wow animate__flipInX" data-wow-duration="1s">
 								instant support <br> with our 
 								<span class="clan-text-secondary">Live-chat</span> 
 								<br> assistant
 							</h2>
 							<p class="mb-4">According to a survey, 68% customers engage in live chat and 63% prefer getting back to a website with live chat for repeat purchase.</p>
 							<p class="mb-4 pb-3">Optimize conversions, prevent cart abandonment, and be there for your customers when they need you with ThriveDesk’s Live Chat feature.</p>
-							<a href="#" class="clan-text-primary">Explore live chat 
+							<a href="#" class="clan-text-primary wow animate__fadeInUp" data-wow-duration="1s">Explore live chat 
 								<img src="assets/images/right-arrow.png" class="ms-4" alt="right arrow">
 							</a>
 						</div>
@@ -393,7 +485,7 @@
 		</section>
 
 		<!--===Product View Wrapper===-->
-		<div class="pdt-view-wrapper clear-fix">
+		<div class="pdt-view-wrapper clearfix">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-10">
@@ -405,7 +497,7 @@
 								</div>
 								<!-- content -->
 								<div class="content">
-									<h3 class="clan-text-primary fw-bold pb-3 mb-1">You will love our solutions</h3>
+									<h3 class="clan-text-primary fw-bold pb-3 mb-1 wow animate__fadeInUp" data-wow-duration=".8s">You will love our solutions</h3>
 									<p>Take a look at our high rated Softwaer and Premium Themes.</p>
 								</div>
 							</div>
@@ -420,7 +512,7 @@
 		</div>
 
 		<!--===Footer Wrapper===-->
-		<footer class="footer-wrapper clan-bg-primary section-gap clear-fix">
+		<footer class="footer-wrapper clan-bg-primary section-gap clearfix">
 			<div class="container">
 				<div class="footer-wrapper_info d-flex justify-content-between">
 					<!--footer item-->
@@ -519,7 +611,7 @@
 		</footer>
 
 		<!--===Copyright Wrapper===-->
-		<div class="copyright-wrapper clear-fix">
+		<div class="copyright-wrapper clearfix">
 			<div class="container">
 				<div class="copyright-content d-flex justify-content-between align-items-center">
 					<div class="text">
@@ -538,12 +630,19 @@
 			</div>
 		</div>
 
+		<!--===Back Top===-->
+		<div class="back-top">
+			<i class="fas fa-chevron-up clan-bg-secondary text-center"></i>
+		</div>
+
 		<!--===jquery library function===-->
 		<script src="assets/js/jquery-1.12.4.min.js"></script>
 		<!--bootstrap bundle min js-->
 		<script src="assets/js/bootstrap.bundle.min.js"></script>
 		<!--slick min js-->
 		<script src="assets/js/slick.min.js"></script>
+		<!--wow min js-->
+		<script src="assets/js/wow.min.js"></script>
 		<!--main js-->
 		<script src="assets/js/custom.js"></script>
 	</body>
