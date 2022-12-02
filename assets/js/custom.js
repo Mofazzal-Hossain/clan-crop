@@ -8,13 +8,14 @@
 
     var $scrolling = $(this).scrollTop();
 
+    // add class sticky menu 
     if ($scrolling >= 50) {
         $nav.addClass("sticky-menu");
     } else {
         $nav.removeClass("sticky-menu");
     }
 
-    // back to top
+    // windows distance
     if ($scrolling >= 400) {
       $top.fadeIn();
     } else {
@@ -22,6 +23,7 @@
     }
   });
 
+  // back top
   $top.on('click', function () {
       $("html,body").animate({
           scrollTop: 0
@@ -34,7 +36,7 @@
   $(".banner-slider").slick({
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     arrows: false,
     fade:true,
     pauseOnHover: false,
@@ -51,23 +53,28 @@
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 991,
+        breakpoint: 1199,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
         },
       },
-
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 2,
           infinite: true,
+          dots:true,
+        arrows:false,
         },
       },
+
       {
         breakpoint: 575,
         settings: {
           slidesToShow: 1,
+          infinite: true,
+          dots:true,
+          arrows:false,
         },
       },
     ],
@@ -139,6 +146,30 @@
     ],
   });
 
+  // wow js
   new WOW().init();
 
+
 })(jQuery);
+
+// open mobile side menu
+function openNav() {
+  document.getElementById("mobileSideMenu").style.width = "260px";
+  document.getElementById("mobileSideMenu").style.display = "block";
+}
+
+// hide mobile side menu
+function closeNav() {
+  document.getElementById("mobileSideMenu").style.width = "0";
+  document.getElementById("mobileSideMenu").style.display = "block".fadeIn();
+}
+
+// outside click mobile side menu hide
+window.onload = function() {
+  var hidediv = document.getElementById('mobileSideMenu');
+  document.onclick = function(div) {
+    if (!div.target.closest('#mobileSideMenu') && hidediv.style.display != "none" && !div.target.closest('.navbar-toggler')) {
+        hidediv.style.display = "none"
+    }
+  }
+}

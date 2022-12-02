@@ -39,6 +39,7 @@ ul,
 li {
   list-style: none;
   padding-left: 0;
+  margin-bottom: 0;
 }
 .btn{
   background: #F3D227;
@@ -92,11 +93,11 @@ h4.sub-title{
   height: 48px;
   border-radius: 5px 5px 0px 5px;
 }
-
-/*---->>>Header Wrapper<<<------*/
-.header-wrapper{
-  background: linear-gradient(180deg, #F9F5E3 -42.01%, #FFFFFF 66.3%);
+.navbar-toggler:focus{
+  box-shadow: none;
 }
+/*---->>>Header Wrapper<<<------*/
+
 
 /* navigation */
 .navbar{
@@ -134,9 +135,10 @@ h4.sub-title{
 /* home banner */
 .home-banner{
   padding: 250px 0 0;
+  background: linear-gradient(180deg, #F9F5E3 -42.01%, #FFFFFF 66.3%);
 }
 .banner-content{
-  width: 880px;
+  max-width: 880px;
   margin: 0 auto;
 }
 .home-banner .banner-content h1{
@@ -190,9 +192,7 @@ h4.sub-title{
   border: 0;
   transition: all 0.2s linear;
 } 
-.product-inventory .card:hover{
-  /* box-shadow: 0px 18px 36px rgba(27, 65, 201, 0.12), 0px 8px 24px rgba(27, 65, 201, 0.08); */
-} 
+
 .product-inventory .card:hover h3{
   color: #1B41C9;
 } 
