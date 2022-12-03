@@ -2,17 +2,16 @@
   ("use strict");
 
   var $win = $(window);
-  var $nav = $('.navbar');
-  var $top = $(".back-top i")
-  $win.on('scroll', function () {
-
+  var $nav = $(".navbar");
+  var $top = $(".back-top i");
+  $win.on("scroll", function () {
     var $scrolling = $(this).scrollTop();
 
-    // add class sticky menu 
+    // add class sticky menu
     if ($scrolling >= 50) {
-        $nav.addClass("sticky-menu");
+      $nav.addClass("sticky-menu");
     } else {
-        $nav.removeClass("sticky-menu");
+      $nav.removeClass("sticky-menu");
     }
 
     // windows distance
@@ -24,13 +23,14 @@
   });
 
   // back top
-  $top.on('click', function () {
-      $("html,body").animate({
-          scrollTop: 0
-      }, 0);
+  $top.on("click", function () {
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      0
+    );
   });
-
-
 
   //banner slider
   $(".banner-slider").slick({
@@ -38,7 +38,7 @@
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-    fade:true,
+    fade: true,
     pauseOnHover: false,
   });
 
@@ -63,8 +63,8 @@
         settings: {
           slidesToShow: 2,
           infinite: true,
-          dots:true,
-        arrows:false,
+          dots: true,
+          arrows: false,
         },
       },
 
@@ -73,13 +73,13 @@
         settings: {
           slidesToShow: 1,
           infinite: true,
-          dots:true,
-          arrows:false,
+          dots: true,
+          arrows: false,
         },
       },
     ],
   });
-  
+
   //Themes slider
   $(".themes-item-slider").slick({
     infinite: true,
@@ -88,7 +88,7 @@
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-    pauseOnHover:false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 991,
@@ -112,7 +112,7 @@
       },
     ],
   });
-  
+
   //Plugins slider
   $(".plugins-item-slider").slick({
     infinite: true,
@@ -121,7 +121,7 @@
     autoplay: true,
     autoplaySpeed: 1500,
     arrows: false,
-    pauseOnHover:false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 991,
@@ -149,27 +149,17 @@
   // wow js
   new WOW().init();
 
+  //  mobile side menu
+  $(".navbar-toggler").click(function (e) {
+    e.stopPropagation();
+    $("#mobileSideMenu").toggleClass("fadeMenu");
+  });
+
+  // outside click mobile side menu hide
+  $("body").click(function (e) {
+    if ($("#mobileSideMenu").hasClass("fadeMenu")) {
+      $("#mobileSideMenu").toggleClass("fadeMenu");
+    }
+  });
 
 })(jQuery);
-
-// open mobile side menu
-function openNav() {
-  document.getElementById("mobileSideMenu").style.width = "260px";
-  document.getElementById("mobileSideMenu").style.display = "block";
-}
-
-// hide mobile side menu
-function closeNav() {
-  document.getElementById("mobileSideMenu").style.width = "0";
-  document.getElementById("mobileSideMenu").style.display = "block".fadeIn();
-}
-
-// outside click mobile side menu hide
-window.onload = function() {
-  var hidediv = document.getElementById('mobileSideMenu');
-  document.onclick = function(div) {
-    if (!div.target.closest('#mobileSideMenu') && hidediv.style.display != "none" && !div.target.closest('.navbar-toggler')) {
-        hidediv.style.display = "none"
-    }
-  }
-}

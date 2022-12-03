@@ -26,7 +26,6 @@
 		
 		<!--===Header Wrapper===-->
 		<header class="header-wrapper w-100 clearfix">
-
 			<!--mobile top wrapper -->
 			<div class="mobile-top-wrapper d-lg-none d-block bg-white">
 				<div class="container">
@@ -46,7 +45,7 @@
 					<a class="navbar-brand me-0 p-0" href="index.html">
 						<img src="assets/images/logo.png" class="w-100" alt="Clan crop logo">
 					</a>
-					<button class="navbar-toggler" onclick="openNav()">
+					<button class="navbar-toggler">
 						<i class="fa fa-bars"></i>
 					</button>
 					<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -81,40 +80,39 @@
 					</div>
 				</div>
 			</nav>
-
-			<!--mobile nav-->
-			<div class="mobile-side-menu d-lg-none">
-				<div class="sidenav " id="mobileSideMenu">
-					<div class="close-nav">
-						<a href="javascript:void(0)" class="closebtn clan-text-primary" onclick="closeNav()">&times;</a>
-					</div>
-					<div class="mobile-logo px-3 pb-3">
-						<img src="assets/images/logo.png" width="180" alt="Clan crop">
-					</div>
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link text-black text-uppercase" href="#">Products</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-black text-uppercase" href="#">themes</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-black text-uppercase" href="#">plugins</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-black text-uppercase" href="#">about us</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-black text-uppercase" href="#">learn</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-black text-uppercase" href="#">forum</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-
 		</header>
+
+		<!--===Mobile Side Menu===-->
+		<div class="mobile-side-menu d-lg-none">
+			<div class="sidenav " id="mobileSideMenu">
+				<div class="close-nav">
+					<a href="javascript:void(0)" class="closebtn clan-text-primary">&times;</a>
+				</div>
+				<div class="mobile-logo px-3 pb-3">
+					<img src="assets/images/logo.png" width="180" alt="Clan crop">
+				</div>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link text-black text-uppercase" href="#">Products</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-black text-uppercase" href="#">themes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-black text-uppercase" href="#">plugins</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-black text-uppercase" href="#">about us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-black text-uppercase" href="#">learn</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-black text-uppercase" href="#">forum</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 		<!--===Home Banner===-->
 		<div class="home-banner">
@@ -170,10 +168,10 @@
 			</div>
 		</div>
 		
-		<!--block spacer-->
+		<!--===Block Spacer===-->
 		<div class="block-spacer"></div>
 
-		<!--===Innovation Productd===-->
+		<!--===Innovation Product===-->
 		<section class="innovation-products section-gap clearfix">
 			<div class="container">
 				<!--products content-->
@@ -279,7 +277,7 @@
 		<!--===Clan Key Services===-->
 		<section class="clan-key-services clearfix section-gap bg-white">
 			<div class="container">
-				<div class="key-service-content gap-3 flex-md-row flex-column d-flex justify-content-between">
+				<div class="key-service-content gap-4 flex-md-row flex-column d-flex justify-content-between">
 					<!--service item-->
 					<div class="service-item d-flex">
 						<div class="image me-3 pe-md-1">
@@ -511,6 +509,90 @@
 			</div>
 		</section>
 
+		<!--===Client Review===-->
+		<section class="client-review section-gap clearfix bg-white">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="fw-bold text-center text-capitalize mb-3 mb-md-4 pb-md-3 title wow animate__fadeInUp" data-wow-duration="0.8s"> What People Think Empowering <span class="clan-text-primary">About Our Products</span></h2>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-10">
+						<div class="client-review-content">
+							<div class="d-md-flex align-items-start">
+								<div class="nav flex-row flex-md-column nav-pills me-md-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								  <button class="nav-link p-0 active" id="client-1" data-bs-toggle="pill" data-bs-target="#client-1" role="tab" aria-selected="true">
+									<img src="assets/images/clients/client-1.png" alt="client image">
+								  </button>
+								  <button class="nav-link p-0" id="client-2" data-bs-toggle="pill" data-bs-target="#client-2" role="tab" aria-selected="false">
+									<img src="assets/images/clients/client-2.png" alt="client image">
+								  </button>
+								  <button class="nav-link p-0" id="client-3" data-bs-toggle="pill" data-bs-target="#client-3" role="tab" aria-selected="false">
+									<img src="assets/images/clients/client-3.png" alt="client image">
+								  </button>
+								  <button class="nav-link p-0" id="client-4" data-bs-toggle="pill" data-bs-target="#client-4" role="tab" aria-selected="false">
+									<img src="assets/images/clients/client-4.png" alt="client image">
+								  </button>
+								  <button class="nav-link p-0">
+									<a href="#" class="view-more clan-bg-secondary d-flex align-items-center text-black">View More</a>
+								  </button>
+								
+								</div>
+								<div class="tab-content" id="v-pills-tabContent">
+									<div class="tab-pane fade show active position-relative align-items-center" id="client-1" role="tabpanel" aria-labelledby="client-1">
+										<div class="thumbs-img position-absolute top-0">
+											<img src="assets//images/thumbs-up.png" alt="">
+										</div>
+										<div class="client-info">
+											<img src="assets/images/quotemark.png" alt="">
+											<p class="mb-3 mb-md-4 pb-md-3">Lorem ipsum dolor sit amet, consecteturi adipiscing elit. Venenatis massa tempu eleifend morbi ametgravida. Integer pharetra massa aliquam lacus in eget quam tortor amet. Sit senectus sed tellus amet. Leo fringilla adipiscing dignissim felis vestibulum. </p>
+											<h3 class="mb-3 sub-title fw-bold clan-text-primary">Brian Jackson</h3>
+											<p>CMO Of Kinsta</p>
+										</div>
+									</div>
+									<div class="tab-pane fade position-relative align-items-center" id="client-2" role="tabpanel" aria-labelledby="client-2">
+										<div class="thumbs-img position-absolute top-0">
+											<img src="assets//images/thumbs-up.png" alt="">
+										</div>
+										<div class="client-info">
+											<img src="assets/images/quotemark.png" alt="">
+											<p class="mb-3 mb-md-4 pb-md-3">Lorem ipsum dolor sit amet, consecteturi adipiscing elit. Venenatis massa tempu eleifend morbi ametgravida. Integer pharetra massa aliquam lacus in eget quam tortor amet. Sit senectus sed tellus amet. Leo fringilla adipiscing dignissim felis vestibulum. </p>
+											<h3 class="mb-3 sub-title fw-bold clan-text-primary">Mosharaf Hosen</h3>
+											<p>Software Developer</p>
+										</div>
+									</div>
+									<div class="tab-pane fade position-relative align-items-center" id="client-3" role="tabpanel" aria-labelledby="client-3">
+										<div class="thumbs-img position-absolute top-0">
+											<img src="assets//images/thumbs-up.png" alt="">
+										</div>
+										<div class="client-info">
+											<img src="assets/images/quotemark.png" alt="">
+											<p class="mb-3 mb-md-4 pb-md-3">Lorem ipsum dolor sit amet, consecteturi adipiscing elit. Venenatis massa tempu eleifend morbi ametgravida. Integer pharetra massa aliquam lacus in eget quam tortor amet. Sit senectus sed tellus amet. Leo fringilla adipiscing dignissim felis vestibulum. </p>
+											<h3 class="mb-3 sub-title fw-bold clan-text-primary">Brian Jackson</h3>
+											<p>CMO Of Kinsta</p>
+										</div>
+									</div>
+									<div class="tab-pane fade position-relative align-items-center" id="client-4" role="tabpanel" aria-labelledby="client-4">
+										<div class="thumbs-img position-absolute top-0">
+											<img src="assets//images/thumbs-up.png" alt="">
+										</div>
+										<div class="client-info">
+											<img src="assets/images/quotemark.png" alt="">
+											<p class="mb-3 mb-md-4 pb-md-3">Lorem ipsum dolor sit amet, consecteturi adipiscing elit. Venenatis massa tempu eleifend morbi ametgravida. Integer pharetra massa aliquam lacus in eget quam tortor amet. Sit senectus sed tellus amet. Leo fringilla adipiscing dignissim felis vestibulum. </p>
+											<h3 class="mb-3 sub-title fw-bold clan-text-primary">Brian Jackson</h3>
+											<p>CMO Of Kinsta</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 		<!--===Support Wrapper===-->
 		<section class="support-wrapper clearfix section-gap">
 			<div class="container">
@@ -619,7 +701,7 @@
 						</div>
 					</div>
 					<!--footer item-->
-					<div class="footer-item mt-lg-0 mt-3">
+					<div class="footer-item mt-lg-0 mt-3 mt-md-0">
 						<h4 class="mb-3 mb-md-4 pb-md-3 clan-text-secondary text-capitalize">Company</h4>
 						<div class="footer-menu_list">
 							<ul>
@@ -633,7 +715,7 @@
 						</div>
 					</div>
 					<!--footer item-->
-					<div class="footer-item mt-lg-0 mt-3">
+					<div class="footer-item mt-lg-0 mt-3 mt-md-5">
 						<h4 class="mb-3 mb-md-4 pb-md-3 clan-text-secondary text-capitalize">Links</h4>
 						<div class="footer-menu_list">
 							<ul>
@@ -647,7 +729,7 @@
 						</div>
 					</div>
 					<!--footer item-->
-					<div class="footer-item mt-lg-0 mt-3">
+					<div class="footer-item mt-lg-0 mt-3 mt-md-5">
 						<h4 class="mb-3 mb-md-4 pb-md-3 clan-text-secondary text-capitalize">Our Products</h4>
 						<div class="footer-menu_list">
 							<ul>
