@@ -518,31 +518,37 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-md-10">
+					<div class="col-xl-10">
 						<div class="client-review-content">
-							<div class="d-md-flex align-items-start">
+							<div class="d-md-flex align-items-center justify-content-center">
 								<div class="nav flex-row flex-md-column nav-pills me-md-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-								  <button class="nav-link p-0 active" id="client-1" data-bs-toggle="pill" data-bs-target="#client-1" role="tab" aria-selected="true">
-									<img src="assets/images/clients/client-1.png" alt="client image">
-								  </button>
-								  <button class="nav-link p-0" id="client-2" data-bs-toggle="pill" data-bs-target="#client-2" role="tab" aria-selected="false">
-									<img src="assets/images/clients/client-2.png" alt="client image">
-								  </button>
-								  <button class="nav-link p-0" id="client-3" data-bs-toggle="pill" data-bs-target="#client-3" role="tab" aria-selected="false">
-									<img src="assets/images/clients/client-3.png" alt="client image">
-								  </button>
-								  <button class="nav-link p-0" id="client-4" data-bs-toggle="pill" data-bs-target="#client-4" role="tab" aria-selected="false">
-									<img src="assets/images/clients/client-4.png" alt="client image">
-								  </button>
-								  <button class="nav-link p-0">
-									<a href="#" class="view-more clan-bg-secondary d-flex align-items-center text-black">View More</a>
-								  </button>
-								
+									<!--nav button-->
+									<button class="nav-link active p-0" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+										<img src="assets/images/clients/client-1.png" class="w-100 h-100" alt="client image">
+									</button>
+									<!--nav button-->
+									<button class="nav-link p-0" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+										<img src="assets/images/clients/client-2.png" class="w-100 h-100" alt="client image">
+									</button>
+									<!--nav button-->
+									<button class="nav-link p-0" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+										<img src="assets/images/clients/client-3.png" class="w-100 h-100" alt="client image">
+									</button>
+									<!--nav button-->
+									<button class="nav-link p-0" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+										<img src="assets/images/clients/client-4.png" class="w-100 h-100" alt="client image">
+									</button>
+									<!--nav button-->
+									<button class="nav-link p-0">
+										<a href="#" class="view-more clan-bg-secondary d-flex align-items-center text-black">View More</a>
+									</button>
 								</div>
+
 								<div class="tab-content" id="v-pills-tabContent">
-									<div class="tab-pane fade show active position-relative align-items-center" id="client-1" role="tabpanel" aria-labelledby="client-1">
+									<!-- tab pane item -->
+									<div class="tab-pane fade show active position-relative" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 										<div class="thumbs-img position-absolute top-0">
-											<img src="assets//images/thumbs-up.png" alt="">
+											<img src="assets/images/thumbs-up.png" class="w-100 h-100" alt="">
 										</div>
 										<div class="client-info">
 											<img src="assets/images/quotemark.png" alt="">
@@ -550,10 +556,11 @@
 											<h3 class="mb-3 sub-title fw-bold clan-text-primary">Brian Jackson</h3>
 											<p>CMO Of Kinsta</p>
 										</div>
-									</div>
-									<div class="tab-pane fade position-relative align-items-center" id="client-2" role="tabpanel" aria-labelledby="client-2">
+								  	</div>
+									<!-- tab pane item -->
+									<div class="tab-pane fade position-relative" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 										<div class="thumbs-img position-absolute top-0">
-											<img src="assets//images/thumbs-up.png" alt="">
+											<img src="assets/images/thumbs-up.png" class="w-100 h-100" alt="">
 										</div>
 										<div class="client-info">
 											<img src="assets/images/quotemark.png" alt="">
@@ -562,9 +569,10 @@
 											<p>Software Developer</p>
 										</div>
 									</div>
-									<div class="tab-pane fade position-relative align-items-center" id="client-3" role="tabpanel" aria-labelledby="client-3">
+									<!-- tab pane item -->
+									<div class="tab-pane fade position-relative" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 										<div class="thumbs-img position-absolute top-0">
-											<img src="assets//images/thumbs-up.png" alt="">
+											<img src="assets/images/thumbs-up.png" class="w-100 h-100" alt="">
 										</div>
 										<div class="client-info">
 											<img src="assets/images/quotemark.png" alt="">
@@ -573,9 +581,10 @@
 											<p>CMO Of Kinsta</p>
 										</div>
 									</div>
-									<div class="tab-pane fade position-relative align-items-center" id="client-4" role="tabpanel" aria-labelledby="client-4">
+									<!-- tab pane item -->
+									<div class="tab-pane fade position-relative" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
 										<div class="thumbs-img position-absolute top-0">
-											<img src="assets//images/thumbs-up.png" alt="">
+											<img src="assets//images/thumbs-up.png" class="w-100 h-100" alt="">
 										</div>
 										<div class="client-info">
 											<img src="assets/images/quotemark.png" alt="">
@@ -591,7 +600,6 @@
 				</div>
 			</div>
 		</section>
-
 
 		<!--===Support Wrapper===-->
 		<section class="support-wrapper clearfix section-gap">
